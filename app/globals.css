@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'SolaimanLipi';
+  src: url('../asset/SolaimanLipi/SolaimanLipi_22-02-2012.ttf') format('truetype'),
+       url('../asset/SolaimanLipi/SolaimanLipi_Bold_10-03-12.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -18,6 +26,7 @@
 
 body {
   color: rgb(var(--foreground-rgb));
+  font-family:'SolaimanLipi';
   background: linear-gradient(
       to bottom,
       transparent,
@@ -30,4 +39,16 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.imageThumb {
+  width: 100% !important;
+  height: 220px !important;
+}
+.postFeatureImage {
+  width: 90% !important;
+  height: auto !important;
+  border-radius: 10px !important;
+  display: block !important;
+  margin: 0 auto !important;
 }
